@@ -1,0 +1,56 @@
+<template name = "oneQuestion">
+
+{{#if visible}}
+<div class="testcontainer">
+
+
+        <h3>{{class}}</h3> <p>Level: {{difficulty}}</p>
+
+
+
+      <button type="submit" class="btn btn-danger  btn-float-right" id="deleteQ" >
+          DELETE
+      </button>
+      <h4 >{{topic}}   </h4>
+
+
+        <hr class="style9 line-style">
+        {{#if img_url }}
+        <div class="course-image">
+              <img alt="Question image" src="{{ img_url.url }}" />
+        </div>
+          {{/if}}
+        <br>
+        <p>{{question}}</p>
+        <hr class="style6 line-style">
+        <div class="row">
+          <div class="col-xs-6" >
+            <label class="radio-inline">
+              <input type="radio" name="optradio" id="answer-1">{{answ_1}}
+            </label>
+          </div>
+          <div class="col-xs-6">
+            <label class="radio-inline">
+              <input type="radio" name="optradio" id="answer-2">{{answ_2}}
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6" >
+            <label class="radio-inline">
+              <input type="radio" name="optradio" id="answer-3">{{answ_3}}
+            </label>
+          </div>
+          <div class="col-xs-6">
+            <label class="radio-inline ">
+              <input type="radio" name="optradio" id="answer-4">{{answ_4}}
+            </label>
+          </div>
+        </div>
+<br>
+
+
+
+</div><br>
+{{/if}}
+</template>

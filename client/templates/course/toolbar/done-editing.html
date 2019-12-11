@@ -1,0 +1,16 @@
+<template name="doneEditingCourse">
+    <ul class="nav nav-pills navbar-right" role="tablist">
+        <li>
+          <a id="delete-course" class="btn btn-sm btn-danger  my_hover_re" href="/learn">
+              <i class="fa fa-remove"></i>
+              {{ mf 'doneEditingCourse-deleteButtonText' 'Delete' }}
+          </a>
+        </li>
+        <li>
+            <a id="done-editing-course" class="btn btn-sm btn-success my_hover_gr" href="#">
+                <i class="fa fa-check"></i>
+                {{ mf 'doneEditingCourse-doneEditingButtonText' 'Done editing' }}
+            </a>
+        </li>
+    </ul>
+</template>

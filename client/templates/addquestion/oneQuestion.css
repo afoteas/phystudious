@@ -1,0 +1,15 @@
+#containerIntro h3,
+#containerIntro p {
+    display: inline;
+    vertical-align: top;
+
+}
+
+.course-image{
+
+max-width:300px;
+height:auto;
+width:auto;
+margin-left: auto;
+margin-right: auto;
+}

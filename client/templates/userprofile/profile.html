@@ -1,0 +1,119 @@
+<template name="profile">
+
+
+    <div class="panel profile-header">
+  <!--      <div class="profile-picture">
+            <img src="images/avatar.png" />
+        </div>
+        <div class="profile-content">
+            <h1>{{currentUser.username}} </h1>
+            <p id="biography">{{currentUser.profile.biography}} </p>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="heroic-panel">
+            <p class="numerator">{{scorescount}}</p> Tests completed
+        </div>
+        <div class="heroic-panel">
+            <p class="numerator">{{totalQuestions}}%</p> Learning percentage
+        </div>
+        <div class="heroic-panel">
+            <p class="numerator">{{totalScore}}</p> Score
+        </div>
+
+        <div class="story-panel">
+            Class Prefered: {{classprefered}}
+        </div>
+        <div class="story-panel">
+            {{easyTotal}}
+        </div>
+        <div class="story-panel">
+            {{normalTotal}}
+        </div>
+        <div class="story-panel">
+            {{hardTotal}}
+        </div>
+
+-->
+<div class="jumbotron text-left">
+  <h1>{{currentUser.username}}</h1>
+  <p>{{currentUser.profile.biography}} </p>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4" >
+      <div class="heroic-panel">
+          <p class="numerator">{{scorescount}}</p> Tests completed
+      </div>
+    </div>
+    <div class="col-sm-4" >
+      <div class="heroic-panel">
+          <p class="numerator">{{totalQuestions}}%</p> Learning percentage
+      </div>
+    </div>
+    <div class="col-sm-4 " >
+      <div class="heroic-panel">
+          <p class="numerator">{{totalScore}}</p> Score
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <div class="col-sm-3 story-panel" >
+<div class="story2">
+        Class Prefered: {{classprefered}}
+    </div>
+</div>
+<div class="col-sm-3 story-panel" >
+
+      {{easyTotal}}
+
+</div>
+<div class="col-sm-3 story-panel" >
+
+            {{normalTotal}}
+
+      </div>
+<div class="col-sm-3 story-panel" >
+
+      {{hardTotal}}
+
+</div>
+</div>
+
+<br>
+<div style="overflow-x:auto;">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Class</th>
+                <th>Chapter</th>
+                <th># Questions</th>
+                <th>Easy</th>
+                <th>Normal</th>
+                <th>Hard</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each scores}}
+              <tr>
+                <td>{{dateFormatter dateCreated}}</td>
+                <td>{{class}}</td>
+                <td>{{chapter}}</td>
+                <td>{{numberQ}}</td>
+                <td>{{easyScore}}/{{countEasy}}</td>
+                <td>{{normalScore}}/{{countNormal}}</td>
+                <td>{{hardScore}}/{{countHard}}</td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+</div>
+
+
+
+
+    </div>
+</template>

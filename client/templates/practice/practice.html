@@ -1,0 +1,67 @@
+<template name="practice">
+    <div class="panel">
+        <div class="panel-heading">
+            <h1 class="teach-main-title">
+                Set the test parameters
+            </h1>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+              <label for="classQuestion">
+                  School Class
+              </label>
+              <select class="form-control" id="classQuestion">
+                  <option value="Gymnasium A">Gymnasium A</option>
+                  <option value="Gymnasium B">Gymnasium B</option>
+                  <option value="Gymnasium C">Gymnasium C</option>
+                  <option value="Lyceum A">Lyceum A</option>
+                  <option value="Lyceum B">Lyceum B</option>
+                  <option value="Lyceum C">Lyceum C</option>
+
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="topicQuestion">
+                Lesson Chapter
+            </label>
+            <select class="form-control" id="chapterQuestion">
+              <option value="Chapter 1">Chapter 1</option>
+              <option value="Chapter 2">Chapter 2</option>
+              <option value="Chapter 3">Chapter 3</option>
+              <option value="Chapter 4">Chapter 4</option>
+              <option value="Chapter 5">Chapter 5</option>
+              <option value="All Chapters" selected="selected">All Chapters</option>
+            </select>
+        </div>
+            <div class="form-group">
+                <label for="difficultyQuestion">
+                    Starting Level
+                </label>
+                <select class="form-control" id="difficultyQuestion">
+                    <option value=1>Easy (1)</option>
+                    <option value=2  selected="selected" >Normal (2)</option>
+                    <option value=3>Hard (3)</option>
+                </select>
+
+          </div>
+          <div class="form-group">
+              <label for="numberQuestion">
+                  Number of Questions
+              </label>
+              <br>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" id="Checked5" checked>5
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" id="Checked10">10
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" id="Checked20">20
+              </label>
+        </div>
+            <button type="submit" class="btn btn-success" id="startest" >
+                START
+            </button>
+        </div>
+    </div>
+</template>

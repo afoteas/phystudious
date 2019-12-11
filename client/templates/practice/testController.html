@@ -1,0 +1,32 @@
+<template name = "testController">
+
+<div class="testcontainer">
+<div class='test-header'>
+<div class='column-left text-left'>
+<h3>Question {{currentQ}}</h3>
+</div>
+<div class='column-right text-right'>
+<h3>Level {{difficultyQ}}</h3>
+</div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped progress-bar-animated" style="width:{{barWidth}}%"></div>
+</div>
+<div class="testcontainer">
+{{>questionDisplay}}
+</div>
+
+<div class="buttonbar">
+
+<!--        <button type="button" class="btn btn-warning btn-float-left text-left"><i class="fa fa-angle-left"></i></button> -->
+
+{{#if LastQuestion}}
+        <button type="button" class="btn btn-info btn-float-center text-left" id='next_btn'>Next <i class="fa fa-angle-right"></i></button>
+{{else}}
+        <button type="button" class="btn btn-success btn-float-center text-left" id='submit_btn'>Submit</button>
+{{/if}}
+</div>
+</div>
+
+
+</template>

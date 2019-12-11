@@ -1,0 +1,58 @@
+.progress-bar-animated{
+  -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+  animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+  //border: 1px solid #ccc!important;
+}
+
+.testcontainer{
+      box-sizing: inherit;
+      border: 1px solid #ccc!important;
+      padding: 0.01em 10px;
+      border-radius: 8px;
+      background-color: white;
+}
+
+.buttonbar{
+  padding: 0.8em 2px;
+  text-align: center;
+}
+
+.btn-float-left{
+display: inline-block;
+  float: left;
+}
+
+.btn-float-right{
+display: inline-block;
+  float: right;
+}
+
+.btn-float-center{
+display: inline-block;
+
+}
+
+.test-header{
+   overflow: hidden;
+}
+
+.column-right {
+    float: right;
+
+}
+.column-left {
+    float: left;
+
+}
+
+.line-style{
+  margin-top: 20px;
+margin-bottom: 20px;
+border: 0;
+border-top: 1px solid #c7c6c6;
+}
+
+.radio-mid{
+  position: absolute;
+  left: 50%;
+}

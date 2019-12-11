@@ -1,0 +1,3 @@
+Template.contribute.rendered = function() {
+
+};

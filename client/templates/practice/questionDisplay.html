@@ -1,0 +1,126 @@
+<template name = "questionDisplay">
+
+<h4>{{data_q.topic}}</h4>
+{{# if img_url }}
+<div class="course-image">
+
+      <img alt="Question image" src="{{ img_url.url }}" />
+
+</div>
+{{/ if}}
+<br>
+<p>{{data_q.question}}</p>
+<hr class="style6 line-style">
+
+<div class="form-group">
+<div class="container-fluid">
+
+  {{#if correctPosition1}}
+  <div class="row">
+    <div class="col-xs-6" >
+      <label class="radio-inline">
+        <input type="radio" name="optradio" id="answer-1">{{answ_1}}
+      </label>
+    </div>
+    <div class="col-xs-6">
+      <label class="radio-inline">
+        <input type="radio" name="optradio" id="answer-2">{{answ_2}}
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6" >
+      <label class="radio-inline">
+        <input type="radio" name="optradio" id="answer-3">{{answ_3}}
+      </label>
+    </div>
+    <div class="col-xs-6">
+      <label class="radio-inline ">
+        <input type="radio" name="optradio" id="answer-4">{{answ_4}}
+      </label>
+    </div>
+  </div>
+  {{else}}
+    {{#if correctPosition2}}
+    <div class="row">
+      <div class="col-xs-6" >
+        <label class="radio-inline">
+          <input type="radio" name="optradio" id="answer-2">{{answ_2}}
+        </label>
+      </div>
+      <div class="col-xs-6">
+        <label class="radio-inline">
+          <input type="radio" name="optradio" id="answer-1">{{answ_1}}
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6" >
+        <label class="radio-inline">
+          <input type="radio" name="optradio" id="answer-3">{{answ_3}}
+        </label>
+      </div>
+      <div class="col-xs-6">
+        <label class="radio-inline ">
+          <input type="radio" name="optradio" id="answer-4">{{answ_4}}
+        </label>
+      </div>
+    </div>
+    {{else}}
+      {{#if correctPosition3}}
+      <div class="row">
+        <div class="col-xs-6" >
+          <label class="radio-inline">
+            <input type="radio" name="optradio" id="answer-2">{{answ_2}}
+          </label>
+        </div>
+        <div class="col-xs-6">
+          <label class="radio-inline">
+            <input type="radio" name="optradio" id="answer-3">{{answ_3}}
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6" >
+          <label class="radio-inline">
+            <input type="radio" name="optradio" id="answer-1">{{answ_1}}
+          </label>
+        </div>
+        <div class="col-xs-6">
+          <label class="radio-inline ">
+            <input type="radio" name="optradio" id="answer-4">{{answ_4}}
+          </label>
+        </div>
+      </div>
+      {{else}}
+      <div class="row">
+        <div class="col-xs-6" >
+          <label class="radio-inline">
+            <input type="radio" name="optradio" id="answer-2">{{answ_2}}
+          </label>
+        </div>
+        <div class="col-xs-6">
+          <label class="radio-inline">
+            <input type="radio" name="optradio" id="answer-3">{{answ_3}}
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6" >
+          <label class="radio-inline">
+            <input type="radio" name="optradio" id="answer-4">{{answ_4}}
+          </label>
+        </div>
+        <div class="col-xs-6">
+          <label class="radio-inline ">
+            <input type="radio" name="optradio" id="answer-1">{{answ_1}}
+          </label>
+        </div>
+      </div>
+      {{/if}}
+    {{/if}}
+  {{/if}}
+
+</div>
+</div>
+</template>

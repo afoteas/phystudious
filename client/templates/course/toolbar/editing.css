@@ -1,0 +1,11 @@
+.my_hover_re:hover{
+  opacity: 0.5;
+  background: red !important;
+  color: grey;
+}
+
+.my_hover_gr:hover{
+  opacity: 0.5;
+  background: green !important;
+  color: grey;
+}

@@ -1,0 +1,13 @@
+<template name="editCourse">
+  <ul class="nav nav-pills navbar-right" role="tablist">
+    <li>
+      {{#if verified}}
+      <a id="edit-course" class="btn btn-sm btn-success my_hover_gr" href="#">
+        <i class="fa fa-pencil-square-o"></i>
+        {{ mf 'editCourse-editCourseButtonText' 'Edit course' }}
+      </a>
+      {{/if}}
+    </li>
+
+  </ul>
+</template>
